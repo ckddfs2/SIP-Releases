@@ -8,11 +8,12 @@ SIP（Software Integration Platform）把厂商的 MCU 工程自动转换成标�
 
 | 版本 | 发布日期 | 产物 |
 |---|---|---|
-| **1.2** | 2026-10-28 | [SIP.exe](https://github.com/ckddfs2/SIP-Releases/releases/download/v1.2/SIP.exe) |
+| **1.3** | 2026-10-29 | [SIP.exe](https://github.com/ckddfs2/SIP-Releases/releases/download/v1.3/SIP.exe) |
 
 - 单文件、自带运行时（Python + JRE + PlantUML），**无需安装，下载后双击运行**。
 - 平台：Windows 64 位。
-- 文件大小约 100.6 MB；SHA-256 `01ecefa00d2af17b9203bed70bc7b9bfcbd074396cdfb7730f4585f80c0b8c91`。
+- 文件大小约 106.6 MB；SHA-256 `681ea0e1a12284544a9de7402e3dfb4c151773cdf45eb300878cb4be523c4124`。
+- 1.3 修复 Web UI「导出详设 PDF」报 `No module named 'PIL'` 的问题，其余功能与 1.2 相同。
 
 ## 变更记录
 

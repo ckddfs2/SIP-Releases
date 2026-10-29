@@ -1,5 +1,15 @@
 # 变更记录
 
+## 1.3 — 2026-10-29
+
+### 修复
+
+- **Web UI 导出详设 PDF 报 `No module named 'PIL'`**：打包配置误把 Pillow 排除，而内置 reportlab 5.0.1 在 `reportlab/lib/utils.py` 顶层无条件 `from PIL import Image`，导致冻结版 exe 的所有 PDF 导出在导入阶段失败（Markdown 仍能保存）。现已在 exe 中带上 Pillow，详设 PDF（含 PlantUML 图）恢复生成。
+
+### 分发
+
+- `SIP.exe` 体积由 105,501,559 B 增至 111,764,377 B（约 +6.0 MB），SHA-256 `681ea0e1a12284544a9de7402e3dfb4c151773cdf45eb300878cb4be523c4124`。
+
 ## 1.2 — 2026-10-28
 
 首个公开发布版本。

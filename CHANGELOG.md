@@ -1,5 +1,19 @@
 # 变更记录
 
+## 1.4 — 2026-11-03
+
+### 新增
+
+- **测试结果统计（Web UI + CLI）**：按模块汇总详细设计、Polyspace、TESSY、代码评审与配置评审结果，生成 `DEV_SW_Testprotocol.xlsx`。
+  - Web 左侧新增「测试结果统计 Statistics」页：最左列固定为模块，负责人 / 评审人可直接编辑，逐项显示状态与计数，并可查看文档路径、测试结果路径与备注。
+  - CLI 新增 `--testprotocol` 系列参数；生成工程自带的 `setup_dev_env.bat` 新增 `[S] Statistics` 菜单（非交互模式 `testprotocol`）。
+  - 工作簿含 `Project` / `Components` / `Artifacts` / `Owners` / `Legend` 五页；状态码沿用 FA / CA / NA / NP / NN / NE。
+- **详设作者与邮箱**：面板生成模块详设时可填写作者与邮箱，同步写入 §1.3 联系人表与导出 PDF 封面。
+
+### 分发
+
+- `SIP.exe` 111,858,361 B（约 106.7 MB），SHA-256 `4ff531b814053430e6130b50a1c71a1b5573228639056815e3bcd312d81ff66f`。
+
 ## 1.3 — 2026-10-29
 
 ### 修复
